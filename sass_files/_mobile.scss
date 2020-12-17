@@ -1,0 +1,106 @@
+// mobile media
+@media (max-width: 650px)
+{
+
+  // navbar
+  nav 
+  {
+    height: fit-content;
+
+    // brand
+  .nav-brand
+  {
+    a
+    {
+      font-size: 18px;
+    }
+  }
+    // Nav-menu
+    .nav-menu ul
+    {
+      display: none;
+      padding-top: 55px;
+      li 
+      {
+        a 
+        {
+          font-size: 16px;
+          text-align: left;
+          &:hover
+          {
+            background: black;
+            color: darkgray;
+            
+          }
+        }
+
+        &:last-child
+        {
+          display: none;
+        }
+      }
+    }
+
+
+    // nav-check
+    #nav-check:checked ~ .nav-menu ul
+    {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    // nav-btn
+    .nav-btn
+    {
+      .nav-search
+      {
+        display: none;
+      }
+      .nav-toggle
+      {
+        display: block;
+        border: 1px solid white;
+
+        // hover
+        &:hover
+        {
+          background: red;
+        }
+      }
+    }
+  }
+
+  // Tour
+  .tour
+  {
+  
+    // cards
+    &-cards
+    {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // gallery
+.gallery
+{
+  &-images
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+}
+
+// Much smaller screens
+@media (max-width: 500px)
+{
+    // gallery
+.gallery
+{
+  &-images
+  {
+    grid-template-columns: 1fr;
+  }
+}
+}

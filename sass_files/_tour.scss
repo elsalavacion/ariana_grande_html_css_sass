@@ -1,0 +1,140 @@
+// tour
+
+.tour
+{
+  background: black;
+  color: white;
+  padding: 75px 0;
+
+  // container
+  &>div
+  {
+    width: 70%;
+    margin: auto;
+  }
+
+  // tour heading
+  &-heading
+  {
+    text-align: center;
+    font-family: $roboto-font;
+
+    h1 
+    {
+      padding: 10px;
+      font-size: 32px;
+    }
+    p 
+    {
+      color: darkgray;
+      padding: 10px 0;
+    }
+  }
+
+  // tour months
+  &-months
+  {
+    background: white;
+    color: black;
+    margin: 20px 0;
+    padding: 0 15px;
+    font-family: $sans-serif;
+    div
+    {
+      line-height: 25px;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+      padding: 10px 0;
+
+
+      // span
+      span 
+      {
+        background: red;
+        padding: 5px 10px;
+        margin: 0 10px;
+        color: white;
+      }
+      .remaining
+      {
+        background: black;
+        color: white;
+        border-radius: 50%;
+        float: right;
+      }
+    }
+  }
+
+  // cards
+  &-cards
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // each card
+  &-card
+  {
+    background: white;
+    color: black;
+    margin: 20px 10px;
+    // img
+    &-image
+    {
+      width: 100%;
+      height: 150px;
+      opacity: 0.8;
+
+      img
+      {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    // heading
+    &-heading
+    {
+      padding: 10px;
+      font-style: italic;
+      font-weight: bolder;
+      font-family: $roboto-condensed;
+    }
+
+    // Date
+    &-date
+    {
+      padding: 5px 10px;
+      color: rgb(145, 143, 143);
+      font-family: $sans-serif;
+    }
+
+    // desc
+    &-desc
+    {
+      padding: 5px 10px;
+      font-family: $sans-serif;
+    }
+
+    // btn
+    &-btn
+    {
+      padding: 5px 10px;
+      font-family: $roboto-font;
+      margin: 20px 0;
+      a
+      {
+        text-decoration: none;
+        background: black;
+        padding: 10px 20px;
+        color: white;
+
+        // hover
+        &:hover
+        {
+          background: darkgray;
+          color: black;
+        }
+      }
+    }
+  }
+
+}

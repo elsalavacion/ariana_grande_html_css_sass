@@ -1,0 +1,53 @@
+// tablet
+@media(max-width: 768px)
+{
+
+
+
+  // tour
+  .tour
+  {
+    &>div
+    {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  // contact
+  .contact
+  {
+    padding: 25px 15px;
+
+  // heading
+  &-heading
+  {
+    padding: 15px 0 10px 0;
+  }
+  // motto
+  &-motto
+  {
+    padding: 15px 0 20px 0;
+  }
+  //  details
+  &-details
+  {
+    grid-template-columns: 1fr;
+    // info
+    &-info
+    {
+      padding: 0 0 25px 0;
+    }
+  }
+}
+
+// gallery
+.gallery
+{
+  &-images
+  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+}
